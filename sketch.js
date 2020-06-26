@@ -32,5 +32,5 @@ function draw() {
    	paper.display();
 	ground.display();
 	trash.display();
-	//Engine.update(engine);
+	Engine.update(engine);
 }
