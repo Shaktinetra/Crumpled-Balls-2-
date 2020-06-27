@@ -14,6 +14,6 @@ class Trash {
 
     display() {
         imageMode(CENTER);
-        image(this.image, 600, 520, 150, 150)
+        image(this.image, 600, 500, 150, 150)
     }
 }
