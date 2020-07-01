@@ -13,8 +13,11 @@ class Paper {
     }
     display() {
         var pos = this.body.position;
+        push();
+        translate(pos.x, pos.y);
+        rotate(angle);
         imageMode(CENTER);
-        fill(255);
         image(this.image, pos.x, pos.y, 50, 50);
+        pop();
     }
 }
