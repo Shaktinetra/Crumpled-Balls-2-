@@ -12,12 +12,14 @@ class Paper {
         World.add(world, this.body);
     }
     display() {
+        imageMode(CENTER);
+        
         var pos = this.body.position;
         var angle = this.body.angle
+        
         push();
         translate(pos.x, pos.y);
         rotate(angle);
-        imageMode(CENTER);
         image(this.image, pos.x, pos.y, 50, 50);
         pop();
     }
